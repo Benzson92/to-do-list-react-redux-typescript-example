@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 import { TaskType } from '../../../../types/TaskType';
 
@@ -23,14 +23,13 @@ const TodoListHeaderFilter: React.FunctionComponent<Props> = ({
 		setOpen((prevState) => !prevState);
 	};
 
-	const handleValueChange = (value: TaskType) => {
-		setCurrentValue(value);
-	};
-
-	const handleChange = (value: TaskType) => {
-		handleValueChange(value);
-		handleToggleSelectButton();
-	};
+	const handleChange = useCallback(
+		(value: TaskType) => {
+			setCurrentValue(value);
+			handleToggleSelectButton();
+		},
+		[setCurrentValue]
+	);
 
 	return (
 		<div
