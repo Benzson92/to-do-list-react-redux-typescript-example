@@ -1,0 +1,59 @@
+.TodoListTaskItemMenu {
+	position: relative;
+
+	.MenuButton {
+		color: #9796a8;
+		background: #FFFFFF;
+		border: 0;
+    padding: 0;
+		font-size: 24px;
+
+		display: flex;
+    justify-content: center;
+		align-items: center;
+	}
+
+	.DropdownMenuItem {
+		cursor: pointer;
+	}
+
+	.DropdownMenu {
+		position: absolute;
+		right: 0;
+		z-index: 10;
+		width: 112px;
+		font-size: 14px;
+		background: #ffffff;
+		box-shadow: 0px 0px 8px rgb(0 0 0 / 10%);
+		border-radius: 10px;
+		margin-top: 6px;
+		padding: 6px;
+	}
+
+	.DropdownMenuItem {
+		padding: 6px 8px;
+		border-radius: 8px;
+		margin: 4px 0;
+
+		&:hover {
+			background: rgb(0 0 0 / 4%);
+		}
+	}
+
+	.EditButton {
+		color: #2e2e2e;
+	}
+
+	.DeleteButton {
+		color: #e07c7c;
+	}
+
+	.ActiveDropdownMenuItem {
+		background: #585292;
+		color: #ffffff;
+
+		&:hover {
+			background: #585292;
+		}
+	}
+}
