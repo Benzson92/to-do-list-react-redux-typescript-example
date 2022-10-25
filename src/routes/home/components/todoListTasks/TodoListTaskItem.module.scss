@@ -1,0 +1,47 @@
+.TodoListTaskItem {
+	padding: 11px 20px;
+	justify-content: space-between;
+	background: #ffffff;
+	border-radius: 44px;
+
+	.TodoListTaskLeftContent {
+		justify-content: flex-start;
+	}
+
+	.Checkbox {
+		width: 22px;
+		height: 22px;
+		flex-shrink: 0;
+    cursor: pointer;
+
+		border: 2px solid #585292;
+		border-radius: 6px;
+
+    margin-right: 16px;
+	}
+
+  .CheckboxCompleted {
+		font-size: 16px;
+		color: #FFFFFF;
+    background: #585292;
+
+		justify-content: center;
+  }
+
+	.Title {
+		font-size: 16px;
+	}
+
+	.TitleCompleted {
+		color: #a9a9a9;
+		text-decoration: line-through;
+	}
+}
+
+.TodoListTaskItem,
+.TodoListTaskLeftContent,
+.CheckboxCompleted {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
