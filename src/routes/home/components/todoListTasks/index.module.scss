@@ -1,0 +1,9 @@
+.TodoListTasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .TodoListTaskItemContainer {
+    margin-bottom: 16px;
+  }
+}
