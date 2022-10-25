@@ -22,18 +22,10 @@ const TodoListCreateEditTaskForm: React.FunctionComponent<Props> = ({
 
 	const trimmedCurrentValue = currentValue.trim();
 
-	// const handleValueChange = (event: ChangeEvent<HTMLInputElement>) => {
-	//   const value = event.target.value
-	// 	setCurrentValue(value);
-	// };
-
-	const handleValueChange = useCallback(
-		(event: ChangeEvent<HTMLInputElement>) => {
-			const value = event.target.value;
-			setCurrentValue(value);
-		},
-		[]
-	);
+	const handleValueChange = (event: ChangeEvent<HTMLInputElement>) => {
+	  const value = event.target.value
+		setCurrentValue(value);
+	};
 
 	const handleSaveClick = useCallback(() => {
 		onSaveTaskTitle(trimmedCurrentValue);
