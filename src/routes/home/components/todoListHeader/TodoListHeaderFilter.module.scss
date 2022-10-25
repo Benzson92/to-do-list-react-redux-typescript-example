@@ -1,0 +1,68 @@
+.TodoListHeaderFilter {
+	position: relative;
+
+	.SelectButton {
+		background: #ffffff;
+		border-radius: 10px;
+		border: 0;
+		padding: 7px 10px;
+		font-size: 13px;
+    line-height: 15px;
+		width: 110px;
+		text-align: left;
+		justify-content: space-between;
+	}
+
+	.TodoListHeaderDownArrowIcon {
+		font-size: 8px;
+	}
+
+	.ActiveTodoListHeaderDownArrowIcon {
+		transform: rotate(180deg);
+	}
+
+  .SelectButton, .TodoListHeaderDownArrowIcon {
+    display: flex;
+		flex-direction: row;
+		align-items: center;
+  }
+
+	.SelectButton,
+	.DropdownMenuItem {
+		color: #000000;
+	}
+
+	.DropdownMenu {
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		background: #ffffff;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		margin-top: 5px;
+		padding: 7px 6px;
+	}
+
+	.DropdownMenuItem {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 6px 8px;
+		border-radius: 8px;
+		margin: 3px 0;
+
+		cursor: pointer;
+
+		&:hover {
+			background: rgb(0 0 0 / 4%);
+		}
+	}
+
+	.ActiveDropdownMenuItem {
+		background: #585292;
+		color: #ffffff;
+
+		&:hover {
+			background: #585292;
+		}
+	}
+}
