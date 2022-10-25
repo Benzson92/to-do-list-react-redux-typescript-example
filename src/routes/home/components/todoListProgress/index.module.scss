@@ -1,0 +1,30 @@
+.TodoListProgress {
+  background: #E07C7C;
+  width: 100%;
+  padding: 18px 19px 25px;
+  border-radius: 20px;
+
+  .Title {
+    font-weight: 500;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+
+  .ProgressBar, .CurrentProgress {
+    height: 8px;
+    border-radius: 8px;
+  }
+
+  .ProgressBar {
+    background: #3B3B3B;
+    margin: 12px 0;
+  }
+
+  .CurrentProgress {
+    background: #FFFFFF;
+  }
+
+  .NumberOfCompletedTasks {
+    color: #EBB9B8;
+  }
+}
