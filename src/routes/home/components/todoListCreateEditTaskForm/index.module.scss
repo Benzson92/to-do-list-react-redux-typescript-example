@@ -1,0 +1,37 @@
+.TodoListCreateEditTaskForm {
+  padding: 14px 20px 13px;
+  background: #FFFFFF;
+  border-radius: 44px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .TextInput {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    flex: 1;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin-right: 56px;
+  }
+
+  .SaveButton {
+    position: absolute;
+    right: 6px;
+
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #585292;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 36px;
+
+    &:disabled {
+      background: rgb(0 0 0 / 25%);
+    }
+  }
+}
