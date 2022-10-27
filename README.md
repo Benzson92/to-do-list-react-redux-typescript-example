@@ -6,6 +6,10 @@ It connected with API from https://github.com/datawowio/todos-json-server.
 
 ## Available Scripts
 
+First: Install dependencies before running the project:
+
+### `yarn`
+
 In the project directory, you can run:
 
 ### `yarn start`
