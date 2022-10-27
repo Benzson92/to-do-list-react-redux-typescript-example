@@ -47,8 +47,5 @@ test('TodoListTaskItem Checkbox onClickIsCompletedTaskItem', () => {
 	);
 
 	fireEvent.click(screen.getByTitle('Checkbox'));
-
-	// expect(screen.getByTestId('Checkbox')).toHaveClass(styles.CheckboxCompleted);
-	// expect(screen.getByText('Delete')).toBeInTheDocument();
 	expect(onClickIsCompletedTaskItem).toHaveBeenCalledTimes(1);
 });
