@@ -43,4 +43,9 @@ const TodoListTaskItem: React.FunctionComponent<Props> = ({
 	);
 };
 
-export default TodoListTaskItem;
+function todoListTaskItemPropsAreEqual({ task: prevTask }: Props, { task: nextTask }: Props) {
+  return prevTask.title === nextTask.title
+    && prevTask.completed === nextTask.completed;
+}
+
+export default React.memo(TodoListTaskItem, todoListTaskItemPropsAreEqual);
