@@ -23,4 +23,4 @@ const TodoListProgress: React.FunctionComponent<Props> = ({ completedTaskAmount,
   )
 }
 
-export default TodoListProgress;
+export default React.memo(TodoListProgress);
